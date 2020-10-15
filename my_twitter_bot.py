@@ -17,7 +17,7 @@ def tweet_line():                           # fonction
     for line in status:
         try:
             print(line)
-            sleep(1800)
+            sleep(5)
             api.update_status(line)
             if line != '\n':               # passer les lignes blanches
                 api.update_status(line)
